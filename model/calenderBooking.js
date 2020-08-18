@@ -14,6 +14,8 @@ const calenderSchema = mongoose.Schema({
         type: String,
         required: true
     },
+
+    //event will have user id
     user: 
     {
       type: mongoose.Schema.Types.ObjectId,

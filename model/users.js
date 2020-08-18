@@ -27,7 +27,12 @@ const userSchema = mongoose.Schema({
     password : {
         type:String,
         required:true
-    }
+    },
+     //user will have event id also
+     report: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Event'
+    }],
 },{   
     timestamps:true
 });
