@@ -23,6 +23,10 @@ module.exports.register = function(req,res){
                     message: "User registered successfully"
                 });
 
+            }else{
+                return res.json(202,{
+                    message: "User surname is not starting with 'A' "
+                });
             }
             
             

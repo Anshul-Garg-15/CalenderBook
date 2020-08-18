@@ -4,7 +4,7 @@ const router = express.Router();
 const userApi = require('../../../services/identityService');
 const userApi1 = require('../../../services/kycService')
 
-//get list of products
+//get list of users
 router.get('/info', userApi.list);
 
 //route for register the user
